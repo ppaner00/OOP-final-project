@@ -120,4 +120,24 @@ void Professor::printBest()
 
     if (bestPosition != -1)
     {
-        std::cout
+        std::cout << "The student with three grades and the best average is: ";
+        std::cout << students[bestPosition]->getName() << " ";
+        std::cout << students[bestPosition]->getSurname();
+        std::cout << ". Average: " << students[bestPosition]->calculateAverage() << std::endl;
+        std::cout << "" << std::endl; // New line
+    } else {
+        std::cout << "Cannot determine the best, no students with three grades for professor " << getName() << std::endl;
+    }
+}
+
+// Method that indicates how many students the professor has
+int Professor::numberOfStudents()
+{
+    return students.size();
+}
+
+// Method to return a student according to their position in the array
+Student* Professor::getStudentAt(int position)
+{
+    return students[position];
+}
