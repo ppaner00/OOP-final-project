@@ -28,6 +28,8 @@ public:
     std::string getID();
     void setID(std::string ID);
 
+    virtual void printInfo() const;
+
 private:
 
     std::string name;

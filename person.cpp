@@ -50,3 +50,7 @@ void Person::setID(std::string ID)
 {
     this->ID = ID;
 }
+
+void Person::printInfo() const {
+    std::cout << surname << "," << name << std::endl;
+}
