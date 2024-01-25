@@ -33,8 +33,8 @@ void Grading()
 
     // Add grades to the students with overloaded methods
     ((Professor*)professor1)->assignGrade("05-E", 3.25, 4.75, 4);
-    ((Professor*)professor1)->assignGrade("06-F", 7.25, 8.95);
-    ((Professor*)professor1)->assignGrade("07-G", 8, 9, 10, 10);
+    ((Professor*)professor1)->assignGrade("06-F", 3.25, 4.95);
+    ((Professor*)professor1)->assignGrade("07-G", 3, 4, 5, 5);
 
     // Print the list of students and the best student of professor 1
     ((Professor*)professor1)->printStudents();
@@ -55,9 +55,9 @@ void Grading()
     professor2->addStudent(st6);
 
     // Add grades to the students with overloaded methods
-    professor2->assignGrade("08-H", 5.5, 5.5, 5);
-    professor2->assignGrade("09-I", 3, 4, 6, 5, 7);
-    professor2->assignGrade("10-J", 3, 6);
+    professor2->assignGrade("08-H", 5, 5, 5);
+    professor2->assignGrade("09-I", 3, 4, 5, 5, 3);
+    professor2->assignGrade("10-J", 3, 3);
 
     // Print the list of students and the best student of professor 2
     professor2->printStudents();

@@ -16,7 +16,7 @@ public:
     Person(std::string name, std::string surname, std::string ID);
 
     // Class destructor
-    ~Person(void);
+    virtual ~Person(void);
 
     // Getters and setters
     std::string getName();
